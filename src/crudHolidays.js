@@ -4,7 +4,7 @@ var mysql = require("mysql");
 const getConnection = (handleDisconnect, callback) => {
   var connection = mysql.createConnection({
     host: "10.0.5.39",
-    user: "root",
+    user: "sqluser",
     password: "(zcg2-c3f36S1",
     database: "holidays",
   });
