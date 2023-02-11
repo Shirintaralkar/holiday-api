@@ -10,6 +10,7 @@ const getConnection = (handleDisconnect, callback) => {
   });
   connection.connect((err) => {
     if (err) {
+      console.log('########## >>>>> ' + err)
       return handleDisconnect("Unable to connect to database!", null);
     }
     connection.on("error", (err) => {
